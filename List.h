@@ -58,7 +58,7 @@ public:
     ListNodePosi(T) insertBefore(ListNodePosi(T) p, T const& e);  //将e作p的前驱揑入
     ListNodePosi(T) insertAfter(ListNodePosi(T) p, T const& e);  //将e作p的后继揑入
     T remove(ListNodePosi(T) p); //删除合法位置p处的节点,返回被删除节点
-    void merge(List<T>& L) { merge(first(), size, L, L.first(), L._size); } //全列表归并
+    void merge(List<T>& L) { merge(first(), _size, L, L.first(), L._size); } //全列表归并
     void sort(ListNodePosi(T) p, int n); //列表区间排序
     void sort() { sort(first(), _size); } //列表整体排序
     int deduplicate(); //无序去重
